@@ -24,6 +24,8 @@
 
 ===============================================================================================================================================================================================
 
+    // 1) Write the program to enter string like Sun  ,Mon  , Tue  , Wed  , Thur ,Fri  ,Sat  and program should return values 0 , 1 ,2 ,3 ,4 ,5 ,6 
+    
 #include <iostream>
 #include <string>
 using namespace std;
@@ -74,3 +76,5 @@ Enter Day: mon
 Output: 1
 Enter Day: jan
 Invalid Day Entered
+
+    // Main Code 
