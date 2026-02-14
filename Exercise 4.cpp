@@ -159,3 +159,67 @@ Roll No. : 37
 Name : Vivek
 Student ID : 97
 Roll No. : 61
+
+=================================================================================================================================================
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Books {
+private:
+    int Book_ID;
+    string Book_name;
+    int Price;
+
+public:
+    void getInput()
+    {
+        cout << "Enter The Name Of Book : ";
+        cin >> Book_name;
+        cout << "Enter The Book Id : ";
+        cin >> Book_ID;
+        cout << "Enter Price : ";
+        cin >> Price;
+    }
+
+    void Display()
+    {
+        cout << "Book name : " << Book_name << endl;
+        cout << "Book ID : " << Book_ID << endl;
+        cout << "Price : " << Price << endl;
+    }
+};
+
+int main()
+{
+    int n;
+    cout << "Enter Number of Books : ";
+    cin >> n;
+    
+    Books B[30];
+    for (int i = 0; i < n; i++)
+    {
+        B[i].getInput();
+    }
+    for (int i = 0; i < n; i++)
+    {
+        B[i].Display();
+    }
+    return 0;
+}
+
+Output ===>
+Enter Number of Books : 2
+Enter The Name Of Book : ABC
+Enter The Book Id : 12345
+Enter Price : 100
+Enter The Name Of Book : XYZ
+Enter The Book Id : 78945
+Enter Price : 200
+Book name : ABC
+Book ID : 12345
+Price : 100
+Book name : XYZ
+Book ID : 78945
+Price : 200
